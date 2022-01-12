@@ -1,0 +1,31 @@
+.section-examples {
+  display: flex;
+  padding-top: 2px;
+  padding-bottom: 94px;
+}
+.examples {
+  @extend %flex;
+}
+.examples__item {
+  position: relative;
+  overflow: hidden;
+}
+.examples__label {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  margin: 0;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: $primary-white-color;
+
+  background-color: #2f303acc;
+  color: #fff;
+}

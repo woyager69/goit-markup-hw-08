@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&family=Raleway:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Портфолио</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+
+  <body>
+    <!-- header-section -->
+    <header class="header">
+      <div class="container">
+        <a href="./index.html" lang="en" class="logo header__logo"
+          >Web<span class="logo__studio logo__studio--black">Studio</span></a
+        >
+        <nav>
+          <ul class="site-nav">
+            <li class="site-nav__item"><a class="site-nav__link" href="./index.html">Студия</a></li>
+            <li class="site-nav__item">
+              <a class="site-nav__link site-nav__link--current" href="./portfolio.html"
+                >Портфолио</a
+              >
+            </li>
+            <li class="site-nav__item"><a class="site-nav__link" href="#">Контакты</a></li>
+          </ul>
+        </nav>
+        <ul class="header-contacts">
+          <li class="header-contacts__item">
+            <a href="mailto:info@devstudio.com" class="header-contacts__link"
+              ><svg class="header-contacts__icon" width="16" height="12">
+                <use href="./images/icons.svg#icon-mail"></use>
+              </svg>
+              info@devstudio.com</a
+            >
+          </li>
+          <li class="header-contacts__item">
+            <a href="tel:+380961111111" class="header-contacts__link"
+              ><svg class="header-contacts__icon" width="10" height="16">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+              +38 096 111 11 11</a
+            >
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <!-- buttons menu section -->
+      <section class="section">
+        <h1 class="hidden">Портфолио</h1>
+        <h2 class="hidden">Фильтр</h2>
+        <div class="container">
+          <ul class="filter">
+            <li class="filter__item"><button class="filter__button" type="button">Все</button></li>
+            <li class="filter__item">
+              <button class="filter__button" type="button">Веб-сайты</button>
+            </li>
+            <li class="filter__item">
+              <button class="filter__button" type="button">Приложения</button>
+            </li>
+            <li class="filter__item">
+              <button class="filter__button" type="button">Дизайн</button>
+            </li>
+            <li class="filter__item">
+              <button class="filter__button" type="button">Маркетинг</button>
+            </li>
+          </ul>
+          <!-- preview -->
+          <ul class="products">
+            <li class="products__item">
+              <a class="products__link" href="#">
+                <article class="product">
+                  <div class="product__thumb">
+                    <img src="./images/project1.jpg" alt="Ноутбук" width="370" height="294" />
+                    <div class="product__overlay">
+                      <p class="product__text">
+                        Технокряк это современная площадка распространения коронавируса. Компании
+                        используют эту платформу для цифрового шпионажа и атак на защищённые сервера
+                        конкурентов.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="product__label">
+                    <h3 class="product__title">Технокряк</h3>
+                    <p class="product__tag">Веб-сайт</p>
+                  </div>
+                </article>
+              </a>
+            </li>
+            <li class="products__item">
+              <a class="products__link" href="#">
+                <article class="product">
+                  <div class="product__thumb">
+                    <img src="./images/project2.jpg" alt="Баскетбол" width="370" height="294" />
+                    <div class="product__overlay">
+                      <p class="product__text">
+                        Оккупируй портленд 8-битный, ликероводочный завод адская крыша вечеринка
+                        волк, пальчиковый ус, глубокая эстетика татуированная пишущая машинка ирония
+                        повседневности.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="product__label">
+                    <h3 class="product__title">Постер New Orlean vs Golden Star</h3>
+                    <p class="product__tag">Дизайн</p>
+                  </div>
+                </article>
+              </a>
+            </li>
+            <li class="products__item">
+              <a class="products__link" href="#">
+                <article class="product">
+                  <div class="product__thumb">
+                    <img src="./images/project3.jpg" alt="Лого-рыба" width="370" height="294" />
+                    <div class="product__overlay">
+                      <p class="product__text">
+                        Переливающаяся пост-ироничная борода с готическим шестигранником и горячим
+                        цыпленком пьёт уксус пишущая машинка мопс синие леггинсы с бутылкой.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="product__label">
+                    <h3 class="product__title">Ресторан Seafood</h3>
+                    <p class="product__tag">Приложение</p>
+                  </div>
+                </article>
+              </a>
+            </li>
+            <li class="products__item">
+              <a class="products__link" href="#"
+                ><article class="product">
+                  <div class="product__thumb">
+                    <img src="./images/project4.jpg" alt="Наушники" width="370" height="294" />
+                    <div class="product__overlay">
+                      <p class="product__text">
+                        Аутентичная толстовка с капюшоном Unicorn для прямой продажи с фермы на
+                        стол, банджо из кочучжана с луковицей Эдисона. Стрит-арт потроха свиная
+                        грудинка hella. Клише френзен.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="product__label">
+                    <h3 class="product__title">Проект Prime</h3>
+                    <p class="product__tag">Маркетинг</p>
+                  </div>
+                </article>
+              </a>
+            </li>
+            <li class="products__item">
+              <a class="products__link" href="#"
+                ><article class="product">
+                  <div class="product__thumb">
+                    <img src="./images/project5.jpg" alt="Коробки" width="370" height="294" />
+                    <div class="product__overlay">
+                      <p class="product__text">
+                        Органический винил с татуировкой в ​​виде всплывающих окон, эстетическая
+                        микродозировка мопса, пост-ирония, о которой вы, вероятно, не слышали,
+                        занимают горькие шишки шрирача.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="product__label">
+                    <h3 class="product__title">Проект Boxes</h3>
+                    <p class="product__tag">Приложение</p>
+                  </div>
+                </article>
+              </a>
+            </li>
+            <li class="products__item">
+              <a class="products__link" href="#"
+                ><article class="product">
+                  <div class="product__thumb">
+                    <img src="./images/project6.jpg" alt="Монитор" width="370" height="294" />
+                    <div class="product__overlay">
+                      <p class="product__text">
+                        Повседневное ношение синтетической эстетики, суккулентов, веганская
+                        толстовка с капюшоном для пальцев, тако, органический винил без глютена,
+                        устойчивое микродозирование.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="product__label">
+                    <h3 class="product__title">Inspiration has no Borders</h3>
+                    <p class="product__tag">Веб-сайт</p>
+                  </div>
+                </article>
+              </a>
+            </li>
+            <li class="products__item">
+              <a class="products__link" href="#"
+                ><article class="product">
+                  <div class="product__thumb">
+                    <img src="./images/project7.jpg" alt="Журнал" width="370" height="294" />
+                    <div class="product__overlay">
+                      <p class="product__text">
+                        Корм для фиксации целиакии, горячая куриная борода, вы, наверное, не слышали
+                        о них. Прямая торговля селфи раклет, шаманская медная кружка микстейп мастер
+                        очищения.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="product__label">
+                    <h3 class="product__title">Издание Limited Edition</h3>
+                    <p class="product__tag">Дизайн</p>
+                  </div>
+                </article>
+              </a>
+            </li>
+            <li class="products__item">
+              <a class="products__link" href="#"
+                ><article class="product">
+                  <div class="product__thumb">
+                    <img src="./images/project8.jpg" alt="Бирка" width="370" height="294" />
+                    <div class="product__overlay">
+                      <p class="product__text">
+                        Домой Это легко для всех и мы можем достичь наименьшего, потому что иначе мы
+                        будем приветствовать наш подарок действительно, закон часто еще больше
+                        отодвигает обязательства.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="product__label">
+                    <h3 class="product__title">Проект LAB</h3>
+                    <p class="product__tag">Маркетинг</p>
+                  </div>
+                </article></a
+              >
+            </li>
+            <li class="products__item">
+              <a class="products__link" href="#"
+                ><article class="product">
+                  <div class="product__thumb">
+                    <img
+                      src="./images/project9.jpg"
+                      alt="Руки на клавиатуре ноутбука"
+                      width="370"
+                      height="294"
+                    />
+                    <div class="product__overlay">
+                      <p class="product__text">
+                        Сама по себе боль важна для основной жирной элиты. Наш выбор удовольствие
+                        получить вещь, от которой никогда не ускользнет? В наших интересах, чтобы
+                        никто не следил за всем.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="product__label">
+                    <h3 class="product__title">Growing Business</h3>
+                    <p class="product__tag">Приложение</p>
+                  </div>
+                </article></a
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__address">
+          <a href="./index.html" lang="en" class="logo footer__logo"
+            >Web<span class="logo__studio logo__studio--white">Studio</span></a
+          >
+          <address class="address">
+            <ul class="address__list">
+              <li class="address__item">
+                <a
+                  class="address__link"
+                  href="https://goo.gl/maps/1u3zxF8ceBxTiurs7"
+                  target="blanc"
+                  rel="norefferer noopener"
+                  >г. Киев, пр-т Леси Украинки, 26</a
+                >
+              </li>
+              <li class="address__item">
+                <a class="address__contact" href="mailto:info@devstudio.com">info@example.com</a>
+              </li>
+              <li class="address__item">
+                <a class="address__contact" href="tel:+380991111111">+38 099 111 11 11</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="follow">
+          <h3 class="follow__title">ПРИСОЕДИНЯЙТЕСЬ</h3>
+          <ul class="social-list">
+            <li class="social-list__item">
+              <a class="social-list__link follow__link" href="#">
+                <svg class="social-list__icon follow__icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a class="social-list__link follow__link" href="#">
+                <svg class="social-list__icon follow__icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a class="social-list__link follow__link" href="#">
+                <svg class="social-list__icon follow__icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a class="social-list__link follow__link" href="#">
+                <svg class="social-list__icon follow__icon" width="20" height="20">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="subscribe">
+          <label class="subscribe__label" for="email">ПОДПИШИТЕСЬ НА РАССЫЛКУ</label>
+          <div class="subscribe__form">
+            <input
+              class="subscribe__input"
+              type="email"
+              name="email"
+              id="email"
+              autocomplete="on"
+              placeholder="E-mail"
+            />
+            <button class="subscribe__btn" type="submit">
+              Подписаться<svg class="subscribe__icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
