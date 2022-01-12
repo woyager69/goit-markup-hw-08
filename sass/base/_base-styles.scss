@@ -1,0 +1,35 @@
+:focus {
+  outline: 1px solid $accent-color;
+}
+.section {
+  padding: 94px 0;
+}
+.container {
+  padding: 0 15px;
+  width: 1200px;
+  margin: 0 auto;
+  .header & {
+    @extend %flex;
+  }
+}
+
+.section__title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+
+  color: $title-text-color;
+}
+.hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
