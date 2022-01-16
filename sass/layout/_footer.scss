@@ -2,13 +2,13 @@
   padding: 60px 0;
   background-color: $footer-background-color;
 }
-.footer .container {
-  display: flex;
-  align-items: baseline;
-}
+// .footer .container {
+//   display: flex;
+//   align-items: baseline;
+// }
 .footer__logo {
   display: inline-block;
-  margin-bottom: 22px;
+  margin-bottom: 20px;
 }
 .logo__studio--white {
   color: $primary-white-color;
@@ -16,12 +16,15 @@
 .footer__address {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  margin-bottom: 60px;
 }
 .address__list {
   font-style: normal;
   font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
+  text-align: center;
 }
 .address__link {
   white-space: nowrap;
@@ -40,9 +43,9 @@
   }
 }
 
-.follow {
-  margin-left: 86px;
-}
+// .follow {
+//   margin-left: 86px;
+// }
 .follow__title {
   font-weight: bold;
   font-size: 14px;
@@ -50,6 +53,7 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 20px;
+  text-align: center;
 
   color: $primary-white-color;
 }

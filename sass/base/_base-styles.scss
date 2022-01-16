@@ -1,15 +1,27 @@
 :focus {
   outline: 1px solid $accent-color;
 }
+body {
+  min-width: 320px;
+}
 .section {
-  padding: 94px 0;
+  padding: 60px 0;
+  @media screen and (min-width: 1200px) {
+    padding: 93px;
+  }
 }
 .container {
+  width: 100%;
   padding: 0 15px;
-  width: 1200px;
   margin: 0 auto;
-  .header & {
-    @extend %flex;
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
   }
 }
 
@@ -19,7 +31,7 @@
   line-height: calc(42 / 36);
   text-align: center;
   letter-spacing: 0.03em;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 
   color: $title-text-color;
 }
