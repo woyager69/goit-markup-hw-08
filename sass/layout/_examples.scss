@@ -12,6 +12,7 @@
 .examples__item {
   position: relative;
   overflow: hidden;
+  flex-basis: calc((100% - 6 * 15px) / 3);
 }
 .examples__label {
   position: absolute;

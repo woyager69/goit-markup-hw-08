@@ -1,14 +1,19 @@
 .features {
   margin: -15px;
-  // display: grid;
-  // grid-template-columns: 25.64% 25.64% 25.64% 23.08%;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 .features__item {
   margin: 15px;
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 4 * 15px) / 2);
+  }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 8 * 15px) / 4);
+  }
 }
-// .features__item:not(:last-child) {
-//   margin-right: 30px;
-// }
 .features__title {
   font-weight: bold;
   font-size: 14px;
@@ -16,8 +21,12 @@
   letter-spacing: 0.03em;
   margin-bottom: 10px;
   text-transform: uppercase;
+  text-align: center;
 
   color: $title-text-color;
+  @media screen and (min-width: 768px) {
+    text-align: start;
+  }
 }
 .features__block {
   display: flex;

@@ -1,7 +1,10 @@
 .filter {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  margin-bottom: 25px;
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+  }
 }
 .filter__item:not(:last-child) {
   margin-right: 8px;
@@ -14,6 +17,7 @@
   text-align: center;
   border-radius: 4px;
   padding: 6px 22px;
+  margin-bottom: 15px;
   color: $title-text-color;
   background-color: $main-background-color;
   transition: color $function-transition, background-color $function-transition,

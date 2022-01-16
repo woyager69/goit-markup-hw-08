@@ -1,11 +1,21 @@
 .team-section {
   background-color: $main-background-color;
 }
-// .team {
-//   @extend %flex;
-// }
+.team {
+  margin: -15px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
 .team__item {
-  margin-top: 30px;
+  margin: 15px;
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 4 * 15px) / 2);
+  }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100% - 8 * 15px) / 4);
+  }
 }
 .team__card {
   background-color: $primary-white-color;

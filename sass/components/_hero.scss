@@ -5,7 +5,8 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding: 200px 0;
+  padding: 112px 0;
+
   margin: 0 auto;
   max-width: 1600px;
   // @media screen and (min-width: 480px) {
@@ -14,23 +15,29 @@
   // @media screen and (min-width: 768px) {
   //   max-width: 1024px;
   // }
-  // @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1200px) {
+    padding: 200px 0;
+  }
   //   max-width: 1600px;
   // }
   background-color: $hero-background-color;
 }
 .hero__title {
   font-weight: 900;
-  font-size: 44px;
-  line-height: calc(60 / 44);
+  font-size: 26px;
+  line-height: calc(42 / 26);
+
   letter-spacing: 0.06em;
   max-width: 650px;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
-
   color: $primary-white-color;
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+    line-height: calc(60 / 44);
+  }
 }
 .hero__btn {
   @extend .button;
