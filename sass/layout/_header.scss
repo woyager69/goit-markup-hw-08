@@ -3,17 +3,23 @@
   border-bottom: 1px solid #ececec;
   position: relative;
   align-items: center;
-  // @media screen and (min-width: 768px) {
-  //   // height: 80px;
-  // }
+  @media screen and (max-width: 767px) {
+    height: 60px;
+  }
 }
 .header__container {
   display: flex;
   align-items: center;
 }
 .header__logo {
-  padding: 16px 0;
+  @media screen and (max-width: 767px) {
+    position: absolute;
+    top: 16px;
+    left: 15px;
+  }
+  // padding: 16px 0;
   @media screen and (min-width: 768px) {
+    position: static;
     margin-right: 88px;
   }
   @media screen and (min-width: 1200px) {
@@ -232,6 +238,7 @@
 }
 .header-social {
   display: flex;
+  flex-wrap: wrap;
   margin-top: 64px;
   @media screen and (min-width: 768px) {
     display: none;
