@@ -58,6 +58,7 @@ body {
 
 body {
   min-width: 320px;
+  background-attachment: fixed;
 }
 
 .section {
@@ -541,6 +542,10 @@ body {
 .checkbox__icon {
   position: absolute;
   display: block;
+  fill: transparent;
+}
+.checkbox__input:checked + .checkbox__field > .checkbox__icon {
+  fill: white;
 }
 
 .checkbox__link {

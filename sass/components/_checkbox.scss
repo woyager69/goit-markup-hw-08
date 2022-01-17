@@ -45,6 +45,10 @@
 .checkbox__icon {
   position: absolute;
   display: block;
+  fill: transparent;
+  .checkbox__input:checked + .checkbox__field > & {
+    fill: white;
+  }
 }
 .checkbox__link {
   margin-left: 5px;
