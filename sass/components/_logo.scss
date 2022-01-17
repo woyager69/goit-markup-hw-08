@@ -6,6 +6,7 @@
   font-size: 24px;
   line-height: calc(28 / 24);
   letter-spacing: 0.03em;
+  padding: 16px 0;
 
   color: $accent-color;
   @media screen and (min-width: 768px) {
@@ -14,6 +15,7 @@
   @media screen and (min-width: 1200px) {
     font-size: 26px;
     line-height: calc(31 / 26);
+    padding: 24px 0;
 
     margin-right: 93px;
   }

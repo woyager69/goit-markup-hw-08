@@ -2,12 +2,10 @@
   display: flex;
   border-bottom: 1px solid #ececec;
   position: relative;
-  height: 60px;
-  // justify-content: space-between;
   align-items: center;
-  @media screen and (min-width: 768px) {
-    height: 80px;
-  }
+  // @media screen and (min-width: 768px) {
+  //   // height: 80px;
+  // }
 }
 .header__container {
   display: flex;
@@ -26,8 +24,9 @@
     margin-right: 84px;
     justify-content: space-between;
   }
-  // flex-direction: column;
-  // justify-content: space-between;
+  @media screen and (min-width: 1200px) {
+    margin-right: 305px;
+  }
 }
 .site-nav__item {
   @media screen and (min-width: 768px) {
@@ -38,6 +37,15 @@
     @media screen and (min-width: 768px) {
       margin-bottom: 31px;
       margin-right: 50px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+    &:not(:last-child) {
+      margin-right: 50px;
+      margin-bottom: 0;
     }
   }
 }
@@ -79,7 +87,10 @@
     font-size: 14px;
     line-height: calc(16 / 14);
     letter-spacing: 0.02em;
-    padding: 32px 0;
+    padding: 32px 0 32px 0;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 31px 0 32px 0;
   }
 }
 //   position: relative;
@@ -118,6 +129,9 @@
   @media screen and (min-width: 768px) {
     flex-direction: column-reverse;
   }
+  @media screen and (min-width: 1200px) {
+    flex-direction: row-reverse;
+  }
 }
 .header-contacts__item {
   &:not(:last-child) {
@@ -128,6 +142,12 @@
     &:not(:last-child) {
       margin-top: 10px;
       margin-bottom: 0;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    &:not(:last-child) {
+      margin-top: 0;
+      margin-left: 30px;
     }
   }
 }
@@ -156,10 +176,18 @@
     line-height: calc(14 / 12);
     letter-spacing: 0.02em;
     color: $primary-text-color;
+    transition: color $function-transition;
     &:hover,
     &:focus {
       color: $accent-color;
     }
+  }
+  @media screen and (min-width: 1200px) {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.02em;
+    padding: 32px 0;
   }
 }
 // .header-contacts__item:nth-child(1) {

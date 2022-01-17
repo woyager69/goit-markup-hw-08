@@ -1,3 +1,5 @@
+// .product {
+// }
 .product__thumb {
   position: relative;
   overflow: hidden;
@@ -10,8 +12,9 @@
   height: 100%;
   padding: 63px 24px;
   background-color: #2196f3e5;
-  transform: translatey(+100%);
+  transform: translatey(+101%);
   transition: transform $function-transition;
+  .products__link:active &,
   .products__link:hover &,
   .products__link:focus & {
     transform: translatey(0);
@@ -24,7 +27,9 @@
   color: $primary-white-color;
 }
 .products__link {
-  display: block;
+  display: flex;
+  flex-direction: column;
+
   transition: box-shadow $function-transition;
   &:hover,
   &:focus {
@@ -34,13 +39,16 @@
 }
 
 .product__label {
+  height: 100%;
   padding: 20px 24px;
   border-left: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   border-right: 1px solid #eeeeee;
-  // @media screen and (min-width: 768px) and (max-width: 1199px) {
-  //   padding: 20px 24px 56px 24px;
-  // }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .products__item:first-child > .products__link .product__label {
+    padding: 20px 24px 56px 24px;
+  }
 }
 .product__title {
   font-weight: bold;
