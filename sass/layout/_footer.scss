@@ -6,9 +6,17 @@
 //   display: flex;
 //   align-items: baseline;
 // }
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
 .footer__logo {
   display: inline-block;
   margin-bottom: 20px;
+  @media screen and (min-width: 768px) {
+    padding: 0;
+  }
 }
 .logo__studio--white {
   color: $primary-white-color;
@@ -16,8 +24,12 @@
 .footer__address {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   margin-bottom: 60px;
+  @media screen and (min-width: 768px) {
+    margin-left: 60px;
+  }
 }
 .address__list {
   font-style: normal;
@@ -43,9 +55,11 @@
   }
 }
 
-// .follow {
-//   margin-left: 86px;
-// }
+.follow {
+  @media screen and (min-width: 768px) {
+    margin-right: 75px;
+  }
+}
 .follow__title {
   font-weight: bold;
   font-size: 14px;

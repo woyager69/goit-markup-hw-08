@@ -197,20 +197,12 @@ body {
   font-size: 24px;
   line-height: calc(28 / 24);
   letter-spacing: 0.03em;
-  padding: 16px 0;
   color: #2196f3;
-}
-@media screen and (min-width: 768px) {
-  .logo {
-    margin-right: 88px;
-  }
 }
 @media screen and (min-width: 1200px) {
   .logo {
     font-size: 26px;
     line-height: calc(31 / 26);
-    padding: 24px 0;
-    margin-right: 93px;
   }
 }
 
@@ -572,6 +564,12 @@ body {
 .subscribe {
   margin-top: 60px;
 }
+@media screen and (min-width: 768px) {
+  .subscribe {
+    margin: 0 auto;
+    max-width: 450px;
+  }
+}
 
 .subscribe__form {
   margin-top: 20px;
@@ -796,6 +794,21 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.header__logo {
+  padding: 16px 0;
+}
+@media screen and (min-width: 768px) {
+  .header__logo {
+    margin-right: 88px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__logo {
+    padding: 24px 0;
+    margin-right: 93px;
+  }
 }
 
 .logo__studio--black {
@@ -1372,9 +1385,26 @@ body {
   background-color: #2f303a;
 }
 
+.footer__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
 .footer__logo {
   display: inline-block;
   margin-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .footer__logo {
+    padding: 0;
+  }
 }
 
 .logo__studio--white {
@@ -1389,10 +1419,18 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 60px;
+}
+@media screen and (min-width: 768px) {
+  .footer__address {
+    margin-left: 60px;
+  }
 }
 
 .address__list {
@@ -1419,6 +1457,12 @@ body {
 }
 .address__contact:hover, .address__contact:focus {
   color: #2196f3;
+}
+
+@media screen and (min-width: 768px) {
+  .follow {
+    margin-right: 75px;
+  }
 }
 
 .follow__title {
