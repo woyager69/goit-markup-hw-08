@@ -1,13 +1,20 @@
 .filter {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 25px;
+  margin-bottom: 40px;
   @media screen and (min-width: 768px) {
     justify-content: center;
+    margin-bottom: 15px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 35px;
   }
 }
-.filter__item:not(:last-child) {
-  margin-right: 8px;
+.filter__item {
+  margin-bottom: 15px;
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
 }
 .filter__button {
   font-weight: 500;
@@ -17,7 +24,6 @@
   text-align: center;
   border-radius: 4px;
   padding: 6px 22px;
-  margin-bottom: 15px;
   color: $title-text-color;
   background-color: $main-background-color;
   transition: color $function-transition, background-color $function-transition,
