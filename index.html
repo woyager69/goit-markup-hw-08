@@ -26,6 +26,7 @@
         data-menu-button
         aria-expanded="false"
         aria-controls="menu"
+        aria-label="меню"
       >
         <svg class="mobile__icon" width="40" height="40" aria-label="Переключатель мобильного меню">
           <use class="mobile__burger" href="./images/icons.svg#icon-burger"></use>
@@ -98,7 +99,9 @@
       <!-- hero-section -->
       <section class="hero">
         <h1 class="hero__title">ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА</h1>
-        <button type="button" class="hero__btn" data-modal-open>Заказать услугу</button>
+        <button type="button" class="hero__btn" data-modal-open aria-label="Заказать услугу">
+          Заказать услугу
+        </button>
       </section>
 
       <!-- features-section -->
@@ -580,7 +583,7 @@
               autocomplete="on"
               placeholder="E-mail"
             />
-            <button class="subscribe__btn" type="submit">
+            <button class="subscribe__btn" type="submit" aria-label="Подписаться">
               Подписаться<svg class="subscribe__icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-send"></use>
               </svg>
@@ -591,7 +594,7 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button type="button" data-modal-close class="modal__close-btn">
+        <button type="button" data-modal-close class="modal__close-btn" aria-label="Закрыть окно">
           <svg class="modal__close-icon" width="11" height="11">
             <use href="images/icons.svg#icon-close"></use>
           </svg>
@@ -643,7 +646,7 @@
             </label>
             <a class="checkbox__link" href="#">Условия договора</a>
           </div>
-          <button class="modal__btn" type="submit">Отправить</button>
+          <button class="modal__btn" type="submit" aria-label="Отправить">Отправить</button>
         </form>
       </div>
     </div>
