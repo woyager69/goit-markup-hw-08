@@ -1134,6 +1134,9 @@ body {
   z-index: 2;
   background-color: transparent;
 }
+.mobile__btn.is-open {
+  position: fixed;
+}
 @media screen and (min-width: 768px) {
   .mobile__btn {
     display: none;
@@ -1165,7 +1168,7 @@ body {
 @media screen and (max-width: 767px) {
   .menu {
     display: none;
-    position: absolute;
+    position: fixed;
     z-index: 1;
     top: 0;
     left: 0;
