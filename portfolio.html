@@ -89,27 +89,27 @@
       </div>
     </header>
     <main>
-      <!-- buttons menu section -->
+      <!-- filter products section -->
       <section class="section">
         <h1 class="hidden">Портфолио</h1>
         <h2 class="hidden">Фильтр</h2>
         <div class="container">
           <ul class="filter">
-            <li class="filter__item"><button class="filter__button" type="button">Все</button></li>
+            <li class="filter__item"><button class="filter__button" type="button" aria-label="Все">Все</button></li>
             <li class="filter__item">
-              <button class="filter__button" type="button">Веб-сайты</button>
+              <button class="filter__button" type="button" aria-label="Веб-сайты">Веб-сайты</button>
             </li>
             <li class="filter__item">
-              <button class="filter__button" type="button">Приложения</button>
+              <button class="filter__button" type="button" aria-label="Приложения">Приложения</button>
             </li>
             <li class="filter__item">
-              <button class="filter__button" type="button">Дизайн</button>
+              <button class="filter__button" type="button" aria-label="Дизайн">Дизайн</button>
             </li>
             <li class="filter__item">
-              <button class="filter__button" type="button">Маркетинг</button>
+              <button class="filter__button" type="button" aria-label="Маркетинг">Маркетинг</button>
             </li>
           </ul>
-          <!-- preview -->
+          <!-- products -->
           <ul class="products">
             <li class="products__item">
               <article class="product">
@@ -118,28 +118,15 @@
                     <picture>
                       <source
                         media="(min-width: 1200px)"
-                        srcset="
-                          ./images/desktop/project1_d_370@1x.jpg 1x,
-                          ./images/desktop/project1_d_370@2x.jpg 2x
-                        "
-                      />
+                        srcset="./images/desktop/project1_d_370@1x.jpg 1x, ./images/desktop/project1_d_370@2x.jpg 2x"/>
                       <source
                         media="(min-width: 768px) and (max-width: 1199px)"
-                        srcset="
-                          ./images/tablet/project1_t_354@1x.jpg 1x,
-                          ./images/tablet/project1_t_354@2x.jpg 2x
-                        "
-                      />
+                        srcset="./images/tablet/project1_t_354@1x.jpg 1x, ./images/tablet/project1_t_354@2x.jpg 2x"/>
                       <source
-                        media="(max-width: 767px)"
-                        srcset="
-                          ./images/mobile/project1_m_450@1x.jpg 1x,
-                          ./images/mobile/project1_m_450@2x.jpg 2x
-                        "
-                      />
+                        media="(min-width: 320px)"
+                        srcset="./images/mobile/project1_m_450@1x.jpg 1x, ./images/mobile/project1_m_450@2x.jpg 2x"/>
                       <img src="./images/desktop/project1_d_370@1x.jpg" alt="Ноутбук" />
                     </picture>
-                    <!-- <img src="./images/project1.jpg" alt="Ноутбук" width="370" height="294" /> -->
                     <div class="product__overlay">
                       <p class="product__text">
                         Технокряк это современная площадка распространения коронавируса. Компании
@@ -160,30 +147,14 @@
                 <a class="products__link" href="#" aria-label="Продукт2">
                   <div class="product__thumb">
                     <picture>
-                      <source
-                        media="(min-width: 1200px)"
-                        srcset="
-                          ./images/desktop/project2_d_370@1x.jpg 1x,
-                          ./images/desktop/project2_d_370@2x.jpg 2x
-                        "
-                      />
-                      <source
-                        media="(min-width: 768px) and (max-width: 1199px)"
-                        srcset="
-                          ./images/tablet/project2_t_354@1x.jpg 1x,
-                          ./images/tablet/project2_t_354@2x.jpg 2x
-                        "
-                      />
-                      <source
-                        media="(max-width: 767px)"
-                        srcset="
-                          ./images/mobile/project2_m_450@1x.jpg 1x,
-                          ./images/mobile/project2_m_450@2x.jpg 2x
-                        "
-                      />
+                      <source media="(min-width: 1200px)"
+                        srcset="./images/desktop/project2_d_370@1x.jpg 1x, ./images/desktop/project2_d_370@2x.jpg 2x" />
+                      <source media="(min-width: 768px) and (max-width: 1199px)"
+                        srcset="./images/tablet/project2_t_354@1x.jpg 1x, ./images/tablet/project2_t_354@2x.jpg 2x" />
+                      <source media="(min-width: 320px)"
+                        srcset="./images/mobile/project2_m_450@1x.jpg 1x, ./images/mobile/project2_m_450@2x.jpg 2x" />
                       <img src="./images/desktop/project2_d_370@1x.jpg" alt="Баскетбол" />
                     </picture>
-                    <!-- <img src="./images/project2.jpg" alt="Баскетбол" width="370" height="294" /> -->
                     <div class="product__overlay">
                       <p class="product__text">
                         Оккупируй портленд 8-битный, ликероводочный завод адская крыша вечеринка
@@ -204,30 +175,14 @@
                 <a class="products__link" href="#" aria-label="Продукт3">
                   <div class="product__thumb">
                     <picture>
-                      <source
-                        media="(min-width: 1200px)"
-                        srcset="
-                          ./images/desktop/project3_d_370@1x.jpg 1x,
-                          ./images/desktop/project3_d_370@2x.jpg 2x
-                        "
-                      />
-                      <source
-                        media="(min-width: 768px) and (max-width: 1199px)"
-                        srcset="
-                          ./images/tablet/project3_t_354@1x.jpg 1x,
-                          ./images/tablet/project3_t_354@2x.jpg 2x
-                        "
-                      />
-                      <source
-                        media="(max-width: 767px)"
-                        srcset="
-                          ./images/mobile/project3_m_450@1x.jpg 1x,
-                          ./images/mobile/project3_m_450@2x.jpg 2x
-                        "
-                      />
+                      <source media="(min-width: 1200px)"
+                        srcset="./images/desktop/project3_d_370@1x.jpg 1x, ./images/desktop/project3_d_370@2x.jpg 2x" />
+                      <source media="(min-width: 768px) and (max-width: 1199px)"
+                        srcset="./images/tablet/project3_t_354@1x.jpg 1x, ./images/tablet/project3_t_354@2x.jpg 2x" />
+                      <source media="(min-width: 320px)"
+                        srcset="./images/mobile/project3_m_450@1x.jpg 1x, ./images/mobile/project3_m_450@2x.jpg 2x" />
                       <img src="./images/desktop/project3_d_370@1x.jpg" alt="Лого-рыба" />
                     </picture>
-                    <!-- <img src="./images/project3.jpg" alt="Лого-рыба" width="370" height="294" /> -->
                     <div class="product__overlay">
                       <p class="product__text">
                         Переливающаяся пост-ироничная борода с готическим шестигранником и горячим
@@ -247,30 +202,14 @@
                 <a class="products__link" href="#" aria-label="Продукт4">
                   <div class="product__thumb">
                     <picture>
-                      <source
-                        media="(min-width: 1200px)"
-                        srcset="
-                          ./images/desktop/project4_d_370@1x.jpg 1x,
-                          ./images/desktop/project4_d_370@2x.jpg 2x
-                        "
-                      />
-                      <source
-                        media="(min-width: 768px) and (max-width: 1199px)"
-                        srcset="
-                          ./images/tablet/project4_t_354@1x.jpg 1x,
-                          ./images/tablet/project4_t_354@2x.jpg 2x
-                        "
-                      />
-                      <source
-                        media="(max-width: 767px)"
-                        srcset="
-                          ./images/mobile/project4_m_450@1x.jpg 1x,
-                          ./images/mobile/project4_m_450@2x.jpg 2x
-                        "
-                      />
+                      <source media="(min-width: 1200px)"
+                        srcset="./images/desktop/project4_d_370@1x.jpg 1x, ./images/desktop/project4_d_370@2x.jpg 2x" />
+                      <source media="(min-width: 768px) and (max-width: 1199px)"
+                        srcset="./images/tablet/project4_t_354@1x.jpg 1x, ./images/tablet/project4_t_354@2x.jpg 2x" />
+                      <source media="(min-width: 320px)"
+                        srcset="./images/mobile/project4_m_450@1x.jpg 1x, ./images/mobile/project4_m_450@2x.jpg 2x" />
                       <img src="./images/desktop/project4_d_370@1x.jpg" alt="Наушники" />
                     </picture>
-                    <!-- <img src="./images/project4.jpg" alt="Наушники" width="370" height="294" /> -->
                     <div class="product__overlay">
                       <p class="product__text">
                         Аутентичная толстовка с капюшоном Unicorn для прямой продажи с фермы на
@@ -291,30 +230,14 @@
                 <a class="products__link" href="#" aria-label="Продукт5">
                   <div class="product__thumb">
                     <picture>
-                      <source
-                        media="(min-width: 1200px)"
-                        srcset="
-                          ./images/desktop/project5_d_370@1x.jpg 1x,
-                          ./images/desktop/project5_d_370@2x.jpg 2x
-                        "
-                      />
-                      <source
-                        media="(min-width: 768px) and (max-width: 1199px)"
-                        srcset="
-                          ./images/tablet/project5_t_354@1x.jpg 1x,
-                          ./images/tablet/project5_t_354@2x.jpg 2x
-                        "
-                      />
-                      <source
-                        media="(max-width: 767px)"
-                        srcset="
-                          ./images/mobile/project5_m_450@1x.jpg 1x,
-                          ./images/mobile/project5_m_450@2x.jpg 2x
-                        "
-                      />
+                      <source media="(min-width: 1200px)"
+                        srcset="./images/desktop/project5_d_370@1x.jpg 1x, ./images/desktop/project5_d_370@2x.jpg 2x" />
+                      <source media="(min-width: 768px) and (max-width: 1199px)"
+                        srcset="./images/tablet/project5_t_354@1x.jpg 1x, ./images/tablet/project5_t_354@2x.jpg 2x" />
+                      <source media="(min-width: 320px)"
+                        srcset="./images/mobile/project5_m_450@1x.jpg 1x, ./images/mobile/project5_m_450@2x.jpg 2x" />
                       <img src="./images/desktop/project5_d_370@1x.jpg" alt="Коробки" />
                     </picture>
-                    <!-- <img src="./images/project5.jpg" alt="Коробки" width="370" height="294" /> -->
                     <div class="product__overlay">
                       <p class="product__text">
                         Органический винил с татуировкой в ​​виде всплывающих окон, эстетическая
@@ -335,30 +258,14 @@
                 <a class="products__link" href="#" aria-label="Продукт6">
                   <div class="product__thumb">
                     <picture>
-                      <source
-                        media="(min-width: 1200px)"
-                        srcset="
-                          ./images/desktop/project6_d_370@1x.jpg 1x,
-                          ./images/desktop/project6_d_370@2x.jpg 2x
-                        "
-                      />
-                      <source
-                        media="(min-width: 768px) and (max-width: 1199px)"
-                        srcset="
-                          ./images/tablet/project6_t_354@1x.jpg 1x,
-                          ./images/tablet/project6_t_354@2x.jpg 2x
-                        "
-                      />
-                      <source
-                        media="(max-width: 767px)"
-                        srcset="
-                          ./images/mobile/project6_m_450@1x.jpg 1x,
-                          ./images/mobile/project6_m_450@2x.jpg 2x
-                        "
-                      />
+                      <source media="(min-width: 1200px)"
+                        srcset="./images/desktop/project6_d_370@1x.jpg 1x, ./images/desktop/project6_d_370@2x.jpg 2x" />
+                      <source media="(min-width: 768px) and (max-width: 1199px)"
+                        srcset="./images/tablet/project6_t_354@1x.jpg 1x, ./images/tablet/project6_t_354@2x.jpg 2x" />
+                      <source media="(min-width: 320px)"
+                        srcset="./images/mobile/project6_m_450@1x.jpg 1x, ./images/mobile/project6_m_450@2x.jpg 2x" />
                       <img src="./images/desktop/project6_d_370@1x.jpg" alt="Монитор" />
                     </picture>
-                    <!-- <img src="./images/project6.jpg" alt="Монитор" width="370" height="294" /> -->
                     <div class="product__overlay">
                       <p class="product__text">
                         Повседневное ношение синтетической эстетики, суккулентов, веганская
@@ -378,31 +285,14 @@
               <article class="product">
                 <a class="products__link" href="#" aria-label="Продукт7">
                   <div class="product__thumb">
-                    <picture>
-                      <source
-                        media="(min-width: 1200px)"
-                        srcset="
-                          ./images/desktop/project7_d_370@1x.jpg 1x,
-                          ./images/desktop/project7_d_370@2x.jpg 2x
-                        "
-                      />
-                      <source
-                        media="(min-width: 768px) and (max-width: 1199px)"
-                        srcset="
-                          ./images/tablet/project7_t_354@1x.jpg 1x,
-                          ./images/tablet/project7_t_354@2x.jpg 2x
-                        "
-                      />
-                      <source
-                        media="(max-width: 767px)"
-                        srcset="
-                          ./images/mobile/project7_m_450@1x.jpg 1x,
-                          ./images/mobile/project7_m_450@2x.jpg 2x
-                        "
-                      />
+                    <source media="(min-width: 1200px)"
+                      srcset="./images/desktop/project7_d_370@1x.jpg 1x, ./images/desktop/project7_d_370@2x.jpg 2x" />
+                    <source media="(min-width: 768px) and (max-width: 1199px)"
+                      srcset="./images/tablet/project7_t_354@1x.jpg 1x, ./images/tablet/project7_t_354@2x.jpg 2x" />
+                    <source media="(min-width: 320px)"
+                      srcset="./images/mobile/project7_m_450@1x.jpg 1x, ./images/mobile/project7_m_450@2x.jpg 2x" />
                       <img src="./images/desktop/project7_d_370@1x.jpg" alt="Журнал" />
                     </picture>
-                    <!-- <img src="./images/project7.jpg" alt="Журнал" width="370" height="294" /> -->
                     <div class="product__overlay">
                       <p class="product__text">
                         Корм для фиксации целиакии, горячая куриная борода, вы, наверное, не слышали
@@ -423,30 +313,14 @@
                 <a class="products__link" href="#" aria-label="Продукт8">
                   <div class="product__thumb">
                     <picture>
-                      <source
-                        media="(min-width: 1200px)"
-                        srcset="
-                          ./images/desktop/project8_d_370@1x.jpg 1x,
-                          ./images/desktop/project8_d_370@2x.jpg 2x
-                        "
-                      />
-                      <source
-                        media="(min-width: 768px) and (max-width: 1199px)"
-                        srcset="
-                          ./images/tablet/project8_t_354@1x.jpg 1x,
-                          ./images/tablet/project8_t_354@2x.jpg 2x
-                        "
-                      />
-                      <source
-                        media="(max-width: 767px)"
-                        srcset="
-                          ./images/mobile/project8_m_450@1x.jpg 1x,
-                          ./images/mobile/project8_m_450@2x.jpg 2x
-                        "
-                      />
+                      <source media="(min-width: 1200px)"
+                        srcset="./images/desktop/project8_d_370@1x.jpg 1x, ./images/desktop/project8_d_370@2x.jpg 2x" />
+                      <source media="(min-width: 768px) and (max-width: 1199px)"
+                        srcset="./images/tablet/project8_t_354@1x.jpg 1x, ./images/tablet/project8_t_354@2x.jpg 2x" />
+                      <source media="(min-width: 320px)"
+                        srcset="./images/mobile/project8_m_450@1x.jpg 1x, ./images/mobile/project8_m_450@2x.jpg 2x" />
                       <img src="./images/desktop/project8_d_370@1x.jpg" alt="Бирка" />
                     </picture>
-                    <!-- <img src="./images/project8.jpg" alt="Бирка" width="370" height="294" /> -->
                     <div class="product__overlay">
                       <p class="product__text">
                         Домой Это легко для всех и мы можем достичь наименьшего, потому что иначе мы
@@ -468,38 +342,17 @@
                 <a class="products__link" href="#" aria-label="Продукт9">
                   <div class="product__thumb">
                     <picture>
-                      <source
-                        media="(min-width: 1200px)"
-                        srcset="
-                          ./images/desktop/project9_d_370@1x.jpg 1x,
-                          ./images/desktop/project9_d_370@2x.jpg 2x
-                        "
-                      />
-                      <source
-                        media="(min-width: 768px) and (max-width: 1199px)"
-                        srcset="
-                          ./images/tablet/project9_t_354@1x.jpg 1x,
-                          ./images/tablet/project9_t_354@2x.jpg 2x
-                        "
-                      />
-                      <source
-                        media="(max-width: 767px)"
-                        srcset="
-                          ./images/mobile/project9_m_450@1x.jpg 1x,
-                          ./images/mobile/project9_m_450@2x.jpg 2x
-                        "
-                      />
+                      <source media="(min-width: 1200px)"
+                        srcset="./images/desktop/project9_d_370@1x.jpg 1x, ./images/desktop/project9_d_370@2x.jpg 2x" />
+                      <source media="(min-width: 768px) and (max-width: 1199px)"
+                        srcset="./images/tablet/project9_t_354@1x.jpg 1x, ./images/tablet/project9_t_354@2x.jpg 2x" />
+                      <source media="(min-width: 320px)"
+                        srcset="./images/mobile/project9_m_450@1x.jpg 1x, ./images/mobile/project9_m_450@2x.jpg 2x" />
                       <img
                         src="./images/desktop/project9_d_370@1x.jpg"
                         alt="Руки на клавиатуре ноутбука"
                       />
                     </picture>
-                    <!-- <img
-                    src="./images/project9.jpg"
-                    alt="Руки на клавиатуре ноутбука"
-                    width="370"
-                    height="294"
-                  /> -->
                     <div class="product__overlay">
                       <p class="product__text">
                         Сама по себе боль важна для основной жирной элиты. Наш выбор удовольствие
