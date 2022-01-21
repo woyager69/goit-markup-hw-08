@@ -33,10 +33,10 @@
 }
 .site-nav {
   display: block;
-  margin-bottom: 306px;
+
   @media screen and (min-width: 768px) {
     display: flex;
-    margin-bottom: 0;
+
     margin-right: 84px;
     justify-content: space-between;
   }
@@ -263,11 +263,18 @@
     background-color: white;
   }
   &.is-open {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
   @media screen and (min-width: 768px) {
     position: static;
     display: flex;
     align-items: center;
+  }
+}
+.menu__links {
+  @media screen and (min-width: 768px) {
+    display: flex;
   }
 }
