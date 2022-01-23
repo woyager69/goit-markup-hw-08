@@ -1097,7 +1097,7 @@ body {
     font-size: 14px;
     line-height: calc(16 / 14);
     letter-spacing: 0.02em;
-    padding: 32px 0 32px 0;
+    padding: 32px 0 33px 0;
   }
 }
 @media screen and (min-width: 1200px) {
