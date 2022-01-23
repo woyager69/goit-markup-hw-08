@@ -790,7 +790,6 @@ body {
   width: 100%;
   height: 100%;
   padding: 77px 24px;
-  overflow-y: scroll;
   background-color: #2196f3e5;
   -webkit-transform: translatey(101%);
       -ms-transform: translatey(101%);
@@ -805,6 +804,11 @@ body {
   -webkit-transform: translatey(0);
       -ms-transform: translatey(0);
           transform: translatey(0);
+}
+@media screen and (max-width: 479px) {
+  .product__overlay {
+    overflow-y: scroll;
+  }
 }
 @media screen and (min-width: 768px) {
   .product__overlay {
