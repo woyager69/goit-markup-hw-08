@@ -1,47 +1,109 @@
 .header {
   display: flex;
   border-bottom: 1px solid #ececec;
-  position: relative;
-  align-items: center;
-  @media screen and (max-width: 767px) {
-    height: 60px;
-  }
 }
 .header__container {
   display: flex;
+  justify-content: space-between;
   align-items: center;
+  position: relative;
+  @media screen and (min-width: 768px) {
+    justify-content: flex-start;
+  }
 }
 .header__logo {
-  @media screen and (max-width: 767px) {
-    position: absolute;
-    top: 16px;
-    left: 15px;
-  }
-  // padding: 16px 0;
+  padding: 16px 0;
   @media screen and (min-width: 768px) {
     position: static;
+    padding: 26px 0;
     margin-right: 88px;
   }
   @media screen and (min-width: 1200px) {
     padding: 24px 0;
-
     margin-right: 93px;
   }
 }
 .logo__studio--black {
   color: $secondary-text-color;
 }
-.site-nav {
-  display: block;
-
-  @media screen and (min-width: 768px) {
+.menu {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  &.is-open {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    padding: 48px 40px;
+    overflow-y: scroll;
+    background-color: white;
     display: flex;
-
-    margin-right: 84px;
+    flex-direction: column;
     justify-content: space-between;
   }
+  @media screen and (min-width: 768px) {
+    position: static;
+    display: flex;
+    // justify-content: flex-start;
+    align-items: center;
+  }
+  // @media screen and (min-width: 1200px){}
+}
+.menu.is-open .header__container {
+  position: fixed;
+}
+.menu__btn {
+  display: flex;
+  background-color: transparent;
+  &.is-open {
+    position: fixed;
+    right: 15px;
+    @media screen and (min-width: 480px) {
+      right: calc((100% - 450px) / 2);
+    }
+    z-index: 2;
+  }
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+.menu__icon {
+  fill: black;
+  transition: fill $function-transition;
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+  }
+}
+.menu__btn .menu__close {
+  display: none;
+}
+.menu__btn.is-open .menu__close {
+  display: block;
+}
+.menu__btn.is-open .menu__burger {
+  display: none;
+}
+.menu__links {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    margin-left: 86px;
+  }
   @media screen and (min-width: 1200px) {
-    margin-right: 305px;
+    margin-left: 305px;
+  }
+}
+.menu__nav {
+  display: block;
+}
+.site-nav {
+  display: block;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
   }
 }
 .site-nav__item {
@@ -186,15 +248,6 @@
     height: 16px;
   }
 }
-// .header-contacts__icon-desktop {
-//   display: none;
-//   fill: currentColor;
-//   margin-right: 10px;
-//   transition: fill $function-transition;
-//   @media screen and (min-width: 1200px) {
-//     display: block;
-//   }
-// }
 .header-social {
   display: flex;
   flex-wrap: wrap;
@@ -214,67 +267,4 @@
   line-height: calc(22 / 18);
   letter-spacing: 0.02em;
   color: $accent-color;
-}
-.mobile__btn {
-  position: absolute;
-  top: 10px;
-  right: 15px;
-  display: inline-flex;
-  margin: 0;
-  padding: 0;
-  z-index: 2;
-  background-color: transparent;
-  &.is-open {
-    position: fixed;
-  }
-  @media screen and (min-width: 768px) {
-    display: none;
-  }
-}
-.mobile__icon {
-  fill: black;
-  transition: fill $function-transition;
-  &:hover,
-  &:focus {
-    fill: $accent-color;
-  }
-}
-
-.mobile__btn .mobile__close {
-  display: none;
-}
-.mobile__btn.is-open .mobile__close {
-  display: block;
-}
-.mobile__btn.is-open .mobile__burger {
-  display: none;
-}
-.menu {
-  @media screen and (max-width: 767px) {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    padding: 48px 40px;
-    overflow-y: scroll;
-    background-color: white;
-  }
-  &.is-open {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-  @media screen and (min-width: 768px) {
-    position: static;
-    display: flex;
-    align-items: center;
-  }
-}
-.menu__links {
-  @media screen and (min-width: 768px) {
-    display: flex;
-  }
 }

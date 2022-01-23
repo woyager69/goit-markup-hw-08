@@ -24,34 +24,40 @@
   <body>
     <!-- header-section -->
     <header class="header">
-      <button
-        type="button"
-        class="mobile__btn"
-        data-menu-button
-        aria-expanded="false"
-        aria-controls="menu"
-      >
-        <svg class="mobile__icon" width="40" height="40" aria-label="Переключатель мобильного меню">
-          <use class="mobile__burger" href="./images/icons.svg#icon-burger"></use>
-          <use class="mobile__close" href="./images/icons.svg#icon-close-mobile"></use>
-        </svg>
-      </button>
       <div class="container header__container">
-        <a href="./index.html" lang="en" class="logo header__logo"
+        <a href="./index.html" lang="en" class="logo header__logo" aria-label="Студия"
           >Web<span class="logo__studio logo__studio--black">Studio</span></a
         >
+        <button
+          type="button"
+          class="menu__btn"
+          data-menu-button
+          aria-expanded="false"
+          aria-controls="menu"
+          aria-label="меню"
+        >
+          <svg class="menu__icon" width="40" height="40" aria-label="Переключатель мобильного меню">
+            <use class="menu__burger" href="./images/icons.svg#icon-burger"></use>
+            <use class="menu__close" href="./images/icons.svg#icon-close-mobile"></use>
+          </svg>
+        </button>
         <div class="menu" id="menu" data-menu>
-          <nav>
+          <nav class="menu__nav">
             <ul class="site-nav">
               <li class="site-nav__item">
-                <a class="site-nav__link" href="./index.html">Студия</a>
+                <a class="site-nav__link" href="./index.html" aria-label="Студия">Студия</a>
               </li>
               <li class="site-nav__item">
-                <a class="site-nav__link site-nav__link--current" href="./portfolio.html"
+                <a
+                  class="site-nav__link site-nav__link--current"
+                  href="./portfolio.html"
+                  aria-label="Портфолио"
                   >Портфолио</a
                 >
               </li>
-              <li class="site-nav__item"><a class="site-nav__link" href="#">Контакты</a></li>
+              <li class="site-nav__item">
+                <a class="site-nav__link" href="#" aria-label="Контакты">Контакты</a>
+              </li>
             </ul>
           </nav>
           <div class="menu__links">
@@ -99,12 +105,16 @@
         <h2 class="hidden">Фильтр</h2>
         <div class="container">
           <ul class="filter">
-            <li class="filter__item"><button class="filter__button" type="button" aria-label="Все">Все</button></li>
+            <li class="filter__item">
+              <button class="filter__button" type="button" aria-label="Все">Все</button>
+            </li>
             <li class="filter__item">
               <button class="filter__button" type="button" aria-label="Веб-сайты">Веб-сайты</button>
             </li>
             <li class="filter__item">
-              <button class="filter__button" type="button" aria-label="Приложения">Приложения</button>
+              <button class="filter__button" type="button" aria-label="Приложения">
+                Приложения
+              </button>
             </li>
             <li class="filter__item">
               <button class="filter__button" type="button" aria-label="Дизайн">Дизайн</button>
@@ -122,13 +132,25 @@
                     <picture>
                       <source
                         media="(min-width: 1200px)"
-                        srcset="./images/desktop/project1_d_370@1x.jpg 1x, ./images/desktop/project1_d_370@2x.jpg 2x"/>
+                        srcset="
+                          ./images/desktop/project1_d_370@1x.jpg 1x,
+                          ./images/desktop/project1_d_370@2x.jpg 2x
+                        "
+                      />
                       <source
                         media="(min-width: 768px) and (max-width: 1199px)"
-                        srcset="./images/tablet/project1_t_354@1x.jpg 1x, ./images/tablet/project1_t_354@2x.jpg 2x"/>
+                        srcset="
+                          ./images/tablet/project1_t_354@1x.jpg 1x,
+                          ./images/tablet/project1_t_354@2x.jpg 2x
+                        "
+                      />
                       <source
                         media="(min-width: 320px)"
-                        srcset="./images/mobile/project1_m_450@1x.jpg 1x, ./images/mobile/project1_m_450@2x.jpg 2x"/>
+                        srcset="
+                          ./images/mobile/project1_m_450@1x.jpg 1x,
+                          ./images/mobile/project1_m_450@2x.jpg 2x
+                        "
+                      />
                       <img src="./images/desktop/project1_d_370@1x.jpg" alt="Ноутбук" />
                     </picture>
                     <div class="product__overlay">
@@ -151,12 +173,27 @@
                 <a class="products__link" href="#" aria-label="Продукт2">
                   <div class="product__thumb">
                     <picture>
-                      <source media="(min-width: 1200px)"
-                        srcset="./images/desktop/project2_d_370@1x.jpg 1x, ./images/desktop/project2_d_370@2x.jpg 2x" />
-                      <source media="(min-width: 768px) and (max-width: 1199px)"
-                        srcset="./images/tablet/project2_t_354@1x.jpg 1x, ./images/tablet/project2_t_354@2x.jpg 2x" />
-                      <source media="(min-width: 320px)"
-                        srcset="./images/mobile/project2_m_450@1x.jpg 1x, ./images/mobile/project2_m_450@2x.jpg 2x" />
+                      <source
+                        media="(min-width: 1200px)"
+                        srcset="
+                          ./images/desktop/project2_d_370@1x.jpg 1x,
+                          ./images/desktop/project2_d_370@2x.jpg 2x
+                        "
+                      />
+                      <source
+                        media="(min-width: 768px) and (max-width: 1199px)"
+                        srcset="
+                          ./images/tablet/project2_t_354@1x.jpg 1x,
+                          ./images/tablet/project2_t_354@2x.jpg 2x
+                        "
+                      />
+                      <source
+                        media="(min-width: 320px)"
+                        srcset="
+                          ./images/mobile/project2_m_450@1x.jpg 1x,
+                          ./images/mobile/project2_m_450@2x.jpg 2x
+                        "
+                      />
                       <img src="./images/desktop/project2_d_370@1x.jpg" alt="Баскетбол" />
                     </picture>
                     <div class="product__overlay">
@@ -179,12 +216,27 @@
                 <a class="products__link" href="#" aria-label="Продукт3">
                   <div class="product__thumb">
                     <picture>
-                      <source media="(min-width: 1200px)"
-                        srcset="./images/desktop/project3_d_370@1x.jpg 1x, ./images/desktop/project3_d_370@2x.jpg 2x" />
-                      <source media="(min-width: 768px) and (max-width: 1199px)"
-                        srcset="./images/tablet/project3_t_354@1x.jpg 1x, ./images/tablet/project3_t_354@2x.jpg 2x" />
-                      <source media="(min-width: 320px)"
-                        srcset="./images/mobile/project3_m_450@1x.jpg 1x, ./images/mobile/project3_m_450@2x.jpg 2x" />
+                      <source
+                        media="(min-width: 1200px)"
+                        srcset="
+                          ./images/desktop/project3_d_370@1x.jpg 1x,
+                          ./images/desktop/project3_d_370@2x.jpg 2x
+                        "
+                      />
+                      <source
+                        media="(min-width: 768px) and (max-width: 1199px)"
+                        srcset="
+                          ./images/tablet/project3_t_354@1x.jpg 1x,
+                          ./images/tablet/project3_t_354@2x.jpg 2x
+                        "
+                      />
+                      <source
+                        media="(min-width: 320px)"
+                        srcset="
+                          ./images/mobile/project3_m_450@1x.jpg 1x,
+                          ./images/mobile/project3_m_450@2x.jpg 2x
+                        "
+                      />
                       <img src="./images/desktop/project3_d_370@1x.jpg" alt="Лого-рыба" />
                     </picture>
                     <div class="product__overlay">
@@ -206,12 +258,27 @@
                 <a class="products__link" href="#" aria-label="Продукт4">
                   <div class="product__thumb">
                     <picture>
-                      <source media="(min-width: 1200px)"
-                        srcset="./images/desktop/project4_d_370@1x.jpg 1x, ./images/desktop/project4_d_370@2x.jpg 2x" />
-                      <source media="(min-width: 768px) and (max-width: 1199px)"
-                        srcset="./images/tablet/project4_t_354@1x.jpg 1x, ./images/tablet/project4_t_354@2x.jpg 2x" />
-                      <source media="(min-width: 320px)"
-                        srcset="./images/mobile/project4_m_450@1x.jpg 1x, ./images/mobile/project4_m_450@2x.jpg 2x" />
+                      <source
+                        media="(min-width: 1200px)"
+                        srcset="
+                          ./images/desktop/project4_d_370@1x.jpg 1x,
+                          ./images/desktop/project4_d_370@2x.jpg 2x
+                        "
+                      />
+                      <source
+                        media="(min-width: 768px) and (max-width: 1199px)"
+                        srcset="
+                          ./images/tablet/project4_t_354@1x.jpg 1x,
+                          ./images/tablet/project4_t_354@2x.jpg 2x
+                        "
+                      />
+                      <source
+                        media="(min-width: 320px)"
+                        srcset="
+                          ./images/mobile/project4_m_450@1x.jpg 1x,
+                          ./images/mobile/project4_m_450@2x.jpg 2x
+                        "
+                      />
                       <img src="./images/desktop/project4_d_370@1x.jpg" alt="Наушники" />
                     </picture>
                     <div class="product__overlay">
@@ -234,12 +301,27 @@
                 <a class="products__link" href="#" aria-label="Продукт5">
                   <div class="product__thumb">
                     <picture>
-                      <source media="(min-width: 1200px)"
-                        srcset="./images/desktop/project5_d_370@1x.jpg 1x, ./images/desktop/project5_d_370@2x.jpg 2x" />
-                      <source media="(min-width: 768px) and (max-width: 1199px)"
-                        srcset="./images/tablet/project5_t_354@1x.jpg 1x, ./images/tablet/project5_t_354@2x.jpg 2x" />
-                      <source media="(min-width: 320px)"
-                        srcset="./images/mobile/project5_m_450@1x.jpg 1x, ./images/mobile/project5_m_450@2x.jpg 2x" />
+                      <source
+                        media="(min-width: 1200px)"
+                        srcset="
+                          ./images/desktop/project5_d_370@1x.jpg 1x,
+                          ./images/desktop/project5_d_370@2x.jpg 2x
+                        "
+                      />
+                      <source
+                        media="(min-width: 768px) and (max-width: 1199px)"
+                        srcset="
+                          ./images/tablet/project5_t_354@1x.jpg 1x,
+                          ./images/tablet/project5_t_354@2x.jpg 2x
+                        "
+                      />
+                      <source
+                        media="(min-width: 320px)"
+                        srcset="
+                          ./images/mobile/project5_m_450@1x.jpg 1x,
+                          ./images/mobile/project5_m_450@2x.jpg 2x
+                        "
+                      />
                       <img src="./images/desktop/project5_d_370@1x.jpg" alt="Коробки" />
                     </picture>
                     <div class="product__overlay">
@@ -262,12 +344,27 @@
                 <a class="products__link" href="#" aria-label="Продукт6">
                   <div class="product__thumb">
                     <picture>
-                      <source media="(min-width: 1200px)"
-                        srcset="./images/desktop/project6_d_370@1x.jpg 1x, ./images/desktop/project6_d_370@2x.jpg 2x" />
-                      <source media="(min-width: 768px) and (max-width: 1199px)"
-                        srcset="./images/tablet/project6_t_354@1x.jpg 1x, ./images/tablet/project6_t_354@2x.jpg 2x" />
-                      <source media="(min-width: 320px)"
-                        srcset="./images/mobile/project6_m_450@1x.jpg 1x, ./images/mobile/project6_m_450@2x.jpg 2x" />
+                      <source
+                        media="(min-width: 1200px)"
+                        srcset="
+                          ./images/desktop/project6_d_370@1x.jpg 1x,
+                          ./images/desktop/project6_d_370@2x.jpg 2x
+                        "
+                      />
+                      <source
+                        media="(min-width: 768px) and (max-width: 1199px)"
+                        srcset="
+                          ./images/tablet/project6_t_354@1x.jpg 1x,
+                          ./images/tablet/project6_t_354@2x.jpg 2x
+                        "
+                      />
+                      <source
+                        media="(min-width: 320px)"
+                        srcset="
+                          ./images/mobile/project6_m_450@1x.jpg 1x,
+                          ./images/mobile/project6_m_450@2x.jpg 2x
+                        "
+                      />
                       <img src="./images/desktop/project6_d_370@1x.jpg" alt="Монитор" />
                     </picture>
                     <div class="product__overlay">
@@ -289,12 +386,28 @@
               <article class="product">
                 <a class="products__link" href="#" aria-label="Продукт7">
                   <div class="product__thumb">
-                    <source media="(min-width: 1200px)"
-                      srcset="./images/desktop/project7_d_370@1x.jpg 1x, ./images/desktop/project7_d_370@2x.jpg 2x" />
-                    <source media="(min-width: 768px) and (max-width: 1199px)"
-                      srcset="./images/tablet/project7_t_354@1x.jpg 1x, ./images/tablet/project7_t_354@2x.jpg 2x" />
-                    <source media="(min-width: 320px)"
-                      srcset="./images/mobile/project7_m_450@1x.jpg 1x, ./images/mobile/project7_m_450@2x.jpg 2x" />
+                    <picture>
+                      <source
+                        media="(min-width: 1200px)"
+                        srcset="
+                          ./images/desktop/project7_d_370@1x.jpg 1x,
+                          ./images/desktop/project7_d_370@2x.jpg 2x
+                        "
+                      />
+                      <source
+                        media="(min-width: 768px) and (max-width: 1199px)"
+                        srcset="
+                          ./images/tablet/project7_t_354@1x.jpg 1x,
+                          ./images/tablet/project7_t_354@2x.jpg 2x
+                        "
+                      />
+                      <source
+                        media="(min-width: 320px)"
+                        srcset="
+                          ./images/mobile/project7_m_450@1x.jpg 1x,
+                          ./images/mobile/project7_m_450@2x.jpg 2x
+                        "
+                      />
                       <img src="./images/desktop/project7_d_370@1x.jpg" alt="Журнал" />
                     </picture>
                     <div class="product__overlay">
@@ -317,12 +430,27 @@
                 <a class="products__link" href="#" aria-label="Продукт8">
                   <div class="product__thumb">
                     <picture>
-                      <source media="(min-width: 1200px)"
-                        srcset="./images/desktop/project8_d_370@1x.jpg 1x, ./images/desktop/project8_d_370@2x.jpg 2x" />
-                      <source media="(min-width: 768px) and (max-width: 1199px)"
-                        srcset="./images/tablet/project8_t_354@1x.jpg 1x, ./images/tablet/project8_t_354@2x.jpg 2x" />
-                      <source media="(min-width: 320px)"
-                        srcset="./images/mobile/project8_m_450@1x.jpg 1x, ./images/mobile/project8_m_450@2x.jpg 2x" />
+                      <source
+                        media="(min-width: 1200px)"
+                        srcset="
+                          ./images/desktop/project8_d_370@1x.jpg 1x,
+                          ./images/desktop/project8_d_370@2x.jpg 2x
+                        "
+                      />
+                      <source
+                        media="(min-width: 768px) and (max-width: 1199px)"
+                        srcset="
+                          ./images/tablet/project8_t_354@1x.jpg 1x,
+                          ./images/tablet/project8_t_354@2x.jpg 2x
+                        "
+                      />
+                      <source
+                        media="(min-width: 320px)"
+                        srcset="
+                          ./images/mobile/project8_m_450@1x.jpg 1x,
+                          ./images/mobile/project8_m_450@2x.jpg 2x
+                        "
+                      />
                       <img src="./images/desktop/project8_d_370@1x.jpg" alt="Бирка" />
                     </picture>
                     <div class="product__overlay">
@@ -346,12 +474,27 @@
                 <a class="products__link" href="#" aria-label="Продукт9">
                   <div class="product__thumb">
                     <picture>
-                      <source media="(min-width: 1200px)"
-                        srcset="./images/desktop/project9_d_370@1x.jpg 1x, ./images/desktop/project9_d_370@2x.jpg 2x" />
-                      <source media="(min-width: 768px) and (max-width: 1199px)"
-                        srcset="./images/tablet/project9_t_354@1x.jpg 1x, ./images/tablet/project9_t_354@2x.jpg 2x" />
-                      <source media="(min-width: 320px)"
-                        srcset="./images/mobile/project9_m_450@1x.jpg 1x, ./images/mobile/project9_m_450@2x.jpg 2x" />
+                      <source
+                        media="(min-width: 1200px)"
+                        srcset="
+                          ./images/desktop/project9_d_370@1x.jpg 1x,
+                          ./images/desktop/project9_d_370@2x.jpg 2x
+                        "
+                      />
+                      <source
+                        media="(min-width: 768px) and (max-width: 1199px)"
+                        srcset="
+                          ./images/tablet/project9_t_354@1x.jpg 1x,
+                          ./images/tablet/project9_t_354@2x.jpg 2x
+                        "
+                      />
+                      <source
+                        media="(min-width: 320px)"
+                        srcset="
+                          ./images/mobile/project9_m_450@1x.jpg 1x,
+                          ./images/mobile/project9_m_450@2x.jpg 2x
+                        "
+                      />
                       <img
                         src="./images/desktop/project9_d_370@1x.jpg"
                         alt="Руки на клавиатуре ноутбука"

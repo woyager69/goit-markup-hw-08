@@ -24,20 +24,19 @@
   border-radius: 0px 0px 4px 4px;
 }
 .team__title {
-  // display: block;
-  // justify-content: center;
   padding-top: 30px;
   padding-bottom: 24px;
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 30px;
+  }
 }
 .team__name {
   font-weight: 500;
   font-size: 16px;
   line-height: calc(19 / 16);
   text-align: center;
-
   margin-bottom: 10px;
   letter-spacing: 0.03em;
-
   color: $title-text-color;
 }
 .team__position {
@@ -46,7 +45,6 @@
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 16px;
-
   color: $primary-text-color;
 }
 

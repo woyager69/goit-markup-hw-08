@@ -1,32 +1,39 @@
 .hero {
-  // max-width: 480px;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url('../images/background-hero.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  background-color: $hero-background-color;
   padding: 112px 0;
-
   margin: 0 auto;
   max-width: 1600px;
-  // @media screen and (min-width: 480px) {
-  //   max-width: 640px;
-  // }
-  // @media screen and (min-width: 768px) {
-  //   max-width: 1024px;
-  // }
-  @media screen and (min-width: 1200px) {
-    padding: 200px 0;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url('../images/background/hero_m_480@1x.jpg');
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/background/hero_m_480@2x.jpg');
   }
-  //   max-width: 1600px;
-  // }
-  background-color: $hero-background-color;
+  @media screen and (min-width: 768px) {
+    padding: 200px 0;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/background/hero_t_768@1x.jpg');
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url('../images/background/hero_t_768@2x.jpg');
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/background/hero_d_1600@1x.jpg');
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url('../images/background/hero_d_1600@2x.jpg');
+    }
+  }
 }
 .hero__title {
   font-weight: 900;
   font-size: 26px;
   line-height: calc(42 / 26);
-
   letter-spacing: 0.06em;
   max-width: 650px;
   text-align: center;

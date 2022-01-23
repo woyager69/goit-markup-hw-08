@@ -22,7 +22,6 @@
   margin-bottom: 10px;
   text-transform: uppercase;
   text-align: center;
-
   color: $title-text-color;
   @media screen and (min-width: 768px) {
     text-align: start;
@@ -34,7 +33,6 @@
   height: 120px;
   justify-content: center;
   align-items: center;
-
   margin-bottom: 31px;
   background-color: $main-background-color;
 }
@@ -42,6 +40,5 @@
   font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
-
   color: $primary-text-color;
 }

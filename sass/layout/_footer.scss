@@ -21,7 +21,6 @@
   @media screen and (min-width: 768px) {
     padding: 0;
   }
-  // @media screen and (min-width: 1200px){}
 }
 .logo__studio--white {
   color: $primary-white-color;
@@ -51,9 +50,6 @@
   }
 }
 .address__link {
-  white-space: nowrap;
-  /* display: inline-block; */
-
   color: $primary-white-color;
 }
 .address__contact {
@@ -98,7 +94,6 @@
     background-color: $accent-color;
   }
 }
-
 .follow__icon {
   fill: $primary-white-color;
 }
