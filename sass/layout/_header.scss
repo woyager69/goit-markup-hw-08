@@ -47,13 +47,8 @@
   @media screen and (min-width: 768px) {
     position: static;
     display: flex;
-    // justify-content: flex-start;
     align-items: center;
   }
-  // @media screen and (min-width: 1200px){}
-}
-.menu.is-open .header__container {
-  position: fixed;
 }
 .menu__btn {
   display: flex;
@@ -193,7 +188,6 @@
     }
   }
 }
-
 .header-contacts__tel {
   font-weight: 500;
   font-size: 34px;
@@ -234,7 +228,6 @@
 }
 .header-contacts__icon {
   display: none;
-
   @media screen and (min-width: 768px) {
     fill: currentColor;
     margin-right: 8px;
