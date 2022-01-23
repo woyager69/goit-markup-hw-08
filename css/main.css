@@ -311,6 +311,9 @@ body {
   padding: 40px;
   position: relative;
   max-width: 450px;
+  -webkit-transform: scale(1) rotate(0deg);
+      -ms-transform: scale(1) rotate(0deg);
+          transform: scale(1) rotate(0deg);
   border-radius: 4px;
   overflow-y: scroll;
   background-color: white;
@@ -335,9 +338,16 @@ body {
 }
 
 .backdrop.is-hidden .modal {
-  -webkit-transform: translate(-50%, -50%) scale(0.1) rotate(-180deg);
-      -ms-transform: translate(-50%, -50%) scale(0.1) rotate(-180deg);
-          transform: translate(-50%, -50%) scale(0.1) rotate(-180deg);
+  -webkit-transform: scale(0.1) rotate(-180deg);
+      -ms-transform: scale(0.1) rotate(-180deg);
+          transform: scale(0.1) rotate(-180deg);
+}
+@media screen and (min-width: 1200px) {
+  .backdrop.is-hidden .modal {
+    -webkit-transform: translate(-50%, -50%) scale(0.1) rotate(-180deg);
+        -ms-transform: translate(-50%, -50%) scale(0.1) rotate(-180deg);
+            transform: translate(-50%, -50%) scale(0.1) rotate(-180deg);
+  }
 }
 
 .modal__close-btn {
