@@ -956,10 +956,6 @@ body {
   }
 }
 
-.menu.is-open .header__container {
-  position: fixed;
-}
-
 .menu__btn {
   display: -webkit-box;
   display: -ms-flexbox;
