@@ -93,9 +93,6 @@
 }
 .menu__nav {
   display: block;
-  // @media screen and (max-width: 767px) {
-  //   margin-left: 86px;
-  // }
 }
 .site-nav {
   display: block;
@@ -110,7 +107,6 @@
     margin-top: 31px;
   }
   &:not(:last-child) {
-    // margin-bottom: 32px;
     @media screen and (min-width: 768px) {
       margin-bottom: 31px;
       margin-right: 50px;
