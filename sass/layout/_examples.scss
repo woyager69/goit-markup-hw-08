@@ -1,9 +1,9 @@
 .section-examples {
-  display: flex;
-  padding-top: 2px;
-  padding-bottom: 94px;
-  @media screen and (max-width: 1199px) {
-    display: none;
+  display: none;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    padding-top: 2px;
+    padding-bottom: 94px;
   }
 }
 .examples {

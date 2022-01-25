@@ -118,6 +118,10 @@ body {
   overflow: hidden;
 }
 
+.section-examples {
+  display: none;
+}
+
 .examples {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1333,15 +1337,15 @@ body {
 }
 
 .section-examples {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding-top: 2px;
-  padding-bottom: 94px;
+  display: none;
 }
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 1200px) {
   .section-examples {
-    display: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 2px;
+    padding-bottom: 94px;
   }
 }
 
