@@ -586,6 +586,9 @@ body {
   position: absolute;
   display: block;
   fill: transparent;
+  -webkit-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  -o-transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .checkbox__input:checked + .checkbox__field > .checkbox__icon {
   fill: white;

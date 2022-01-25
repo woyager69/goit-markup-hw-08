@@ -45,6 +45,7 @@
   position: absolute;
   display: block;
   fill: transparent;
+  transition: fill $function-transition;
   .checkbox__input:checked + .checkbox__field > & {
     fill: white;
   }
