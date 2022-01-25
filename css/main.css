@@ -118,10 +118,6 @@ body {
   overflow: hidden;
 }
 
-.section-examples {
-  display: none;
-}
-
 .examples {
   display: -webkit-box;
   display: -ms-flexbox;
